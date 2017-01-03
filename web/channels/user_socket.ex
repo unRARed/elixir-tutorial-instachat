@@ -2,7 +2,7 @@ defmodule Instachat.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", Instachat.RoomChannel
+  channel "rooms:*", Instachat.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
